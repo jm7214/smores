@@ -7,7 +7,7 @@ var initialZoom = 10.67
 
 
 
-var map = new mapboxgl.Map({
+var initOptions = new mapboxgl.Map({
     container: 'smore-map', // container id
     style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
     center: initialCenterPoint, // starting position [lng, lat]
