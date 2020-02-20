@@ -8,7 +8,7 @@ body { margin: 0;
       padding: 0;
 }
 
-#map {
+#smore-map {
        position: absolute;
             top: 0;
          bottom: 0;
@@ -29,7 +29,7 @@ h3 {
           }
 
 /* sidebar is fixed with and positioned to the left */
-          #sidebar {
+#sidebar {
             position: absolute;
             left: 0;
             top: 0;
