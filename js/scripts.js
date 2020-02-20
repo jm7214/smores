@@ -19,3 +19,12 @@ var map = new mapboxgl.Map(initOptions);
 
 // add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
+
+// iterate over each object in studentData
+smoresData.forEach(function(smoresLotions) {
+  // for each object in the studentData, add a marker to the map with a popup
+  new mapboxgl.Marker()
+    .setLngLat([smoresLocations.longitude, smoresLotions.latitude])
+    .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+    .addTo(map);
+})
