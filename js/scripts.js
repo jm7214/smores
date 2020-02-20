@@ -26,6 +26,6 @@ smoresData.forEach(function(smoreslocations) {
 // for each object in the smoresData, add a marker to the map with a popup
   new mapboxgl.Marker()
     .setLngLat([smoreslocations.longitude, smoreslocations.latitutde])
-    .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-    .addTo(mymap));
+    .setPopup(new mapboxgl.Popup({ offset: 25 })) // add popups
+    .addTo(mymap);
 })
