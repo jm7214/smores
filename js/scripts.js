@@ -21,10 +21,11 @@ var map = new mapboxgl.Map(initOptions);
 map.addControl(new mapboxgl.NavigationControl());
 
 // iterate over each object in smoresData
-smoresData.forEach(function(smoreslotions) {
-  // for each object in the smoresData, add a marker to the map with a popup
+smoresData.forEach(function(smoreslocations) {
+
+// for each object in the smoresData, add a marker to the map with a popup
   new mapboxgl.Marker()
-    .setLngLat([smoreslocations.longitude, smoreslotions.latitude])
+    .setLngLat([smoreslocations.longitude, smoreslocations.latitude])
     .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
     .addTo(map);
 })
