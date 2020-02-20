@@ -23,7 +23,7 @@ h3 {
 
 /* blue buttons with white bold text */
 .flyto-button {
-  background: #ffc87c;
+  background: #FFF;
   color: #0084aa;
   padding: 11px;
   border: none;
@@ -35,7 +35,7 @@ h3 {
 /* on hover, make the background darker and turn the cursor to a pointer */
 button:hover {
 cursor: pointer;
-background-color: #FFF;
+background-color: #ffc87c;
           }
 
 /* sidebar is fixed with and positioned to the left */

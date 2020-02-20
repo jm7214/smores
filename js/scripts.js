@@ -34,7 +34,7 @@ smoresData.forEach(function(smoreslocations) {
     $('#Brooklyn').on('click', function() {
       map.flyTo({
         center: [-73.96643, 40.68356],
-        zoom: 5
+        zoom: 12
       })
     })
 
@@ -42,7 +42,7 @@ smoresData.forEach(function(smoreslocations) {
 
       map.flyTo({
         center: [-73.99094, 40.76011],
-        zoom: initialZoom
+        zoom: 12.5
       })
     })
 
