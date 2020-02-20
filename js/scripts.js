@@ -18,7 +18,7 @@ var initOptions = new mapboxgl.Map({
 var mymap = new mapboxgl.Map(initOptions);
 
 // add zoom and rotation controls to the map.
-mymap.addControl(new mapboxgl.NavigationControl());
+map.addControl(new mapboxgl.NavigationControl());
 
 // iterate over each object in smoresData
 smoresData.forEach(function(smoreslocations) {
