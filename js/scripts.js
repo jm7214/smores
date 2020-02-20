@@ -26,6 +26,31 @@ smoresData.forEach(function(smoreslocations) {
 // for each object in the smoresData, add a marker to the map with a popup
   new mapboxgl.Marker()
     .setLngLat([smoreslocations.longitude, smoreslocations.latitutde])
-    .setPopup(new mapboxgl.Popup({ offset: 25 })) // add popups
+    .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+    .setHTML(`${smoreslocations.place} has ${smoreslocations.type}`))
     .addTo(map);
+})
+
+    $('#Brooklyn').on('click', function() {
+      map.flyTo({
+        center: [-73.96643, 40.68356],
+        zoom: 5
+      })
+    })
+
+    $('#Manhattan').on('click', function() {
+
+      map.flyTo({
+        center: [-73.99094, 40.76011],
+        zoom: initialZoom
+      })
+    })
+
+
+
+    $('#nyc').on('click', function() {
+      map.flyTo({
+        center: initialCenterPoint,
+        zoom: initialZoom
+      })
 })

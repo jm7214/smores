@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <title>S'mores Finder</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-<script src='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css' rel='stylesheet' />
 <link href='css/styles.css' rel='stylesheet' />
 </head>
 <body>
@@ -16,8 +16,19 @@
   <p>S'mores Desserts in NYC</p>
 
   <p>📍Click a marker to see the dessert and the restaurant info.</p>
-
   <hr/>
+      <p>Click the buttons below to fly to the s'mores treat.</p>
+      <br/>
+      <!-- Buttons for flying the map -->
+      <button class='flyto-button' id="Brooklyn">Brooklyn</button>
+      <br/>
+
+      <button class='flyto-button' id="Manhattan">Manhattan</button>
+      <br/>
+
+      <button class='flyto-button' id="nyc">Back to full view</button>
+
+
   </div>
 
 <div id="smore-map"></div>
