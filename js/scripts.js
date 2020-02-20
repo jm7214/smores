@@ -15,10 +15,10 @@ var initOptions = new mapboxgl.Map({
 });
 
 // create the new map
-var map = new mapboxgl.Map(initOptions);
+var mymap = new mapboxgl.Map(initOptions);
 
 // add zoom and rotation controls to the map.
-map.addControl(new mapboxgl.NavigationControl());
+mymap.addControl(new mapboxgl.NavigationControl());
 
 // iterate over each object in smoresData
 smoresData.forEach(function(smoreslocations) {
@@ -27,5 +27,5 @@ smoresData.forEach(function(smoreslocations) {
   new mapboxgl.Marker()
     .setLngLat([smoreslocations.longitude, smoreslocations.latitutde])
     .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-    .addTo(map);
+    .addTo(mymap);
 })
