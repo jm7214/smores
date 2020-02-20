@@ -27,6 +27,5 @@ smoresData.forEach(function(smoreslocations) {
   new mapboxgl.Marker()
     .setLngLat([smoreslocations.longitude, smoreslocations.latitutde])
     .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-    .setHTML(`${smoreslocations.place} has ${smoreslocations.type}`))
     .addTo(map);
 })
